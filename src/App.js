@@ -176,7 +176,6 @@ function App() {
           bus: '',
           hotel: ''
         });
-        setShowDialog(false);
         setCharging(false);
       }
       
@@ -442,7 +441,7 @@ function App() {
         <input type="text" name="cancionSugerida" value={formData.cancionSugerida} onChange={handleChange} style={{fontFamily:'sans-serif'}}/>
       </div>
       <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '20px', paddingRight: '20px'}}>
-        <label>Intolerancias Alimenticias:</label>
+        <label>Si tienes alguna intolerancia alimentaria, indícanos cúal </label>
         <input type="text" name="intolerancias" value={formData.intolerancias} onChange={handleChange} style={{fontFamily:'sans-serif'}}/>
       </div>
       <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '20px', paddingRight: '20px'}}>
@@ -481,7 +480,7 @@ function App() {
           />
       </div>      
       <p style={{textAlign: 'center', paddingLeft: '20px', paddingRight: '20px'}}>
-        Nos complace invitarte a la celebración de nuestra unión, el día 12 de Julio de 2025, la cúal tendrá lugar en la finca: El molino de la venta, en Las Lastrillas, Segovia. Nos encantaría disfrutar de este día al lado de los nuestros ¡Y tú no puedes faltar!
+        Nos complace invitarte a la celebración de nuestra unión, el día 12 de Julio de 2025, la cúal tendrá lugar en la finca: El molino de la venta, en La Lastrilla, Segovia. Nos encantaría disfrutar de este día al lado de los nuestros ¡Y tú no puedes faltar!
       </p>
       <h2 style={{textAlign: 'center', paddingLeft: '20px', paddingRight: '20px'}}>
         Itinerario
