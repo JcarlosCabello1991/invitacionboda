@@ -3,13 +3,19 @@ import styled from "styled-components";
 
 
 const SpanNombre = styled.span`
-  font-family: 'Montserrat';
-  font-size: 20px;
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 40px;
   max-width: 430px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   margin-bottom: 10px;
+  margin-top: 20px;
 `
 
 function Formulario(){

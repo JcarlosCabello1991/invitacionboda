@@ -19,13 +19,6 @@ const Image = styled.img`
   height: auto;
   margin-top: 50px;
 `
-const ImageSave = styled.img`
-  margin-top: 20px;
-  width: 90%;
-  max-width: 400px;
-  height: auto;
-  margin-bottom: 20px;
-`
 
 const ImageBride = styled.img`
   width: 100%;
@@ -54,19 +47,63 @@ const DateSpan = styled.span`
   text-align: center;
 `
 const DateSpanWord = styled.span`
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 30px;
   color: #454545;
   width: 75px;
   text-align: center;
 `
 
 const SpanText = styled.span`
-  font-size: 18px;
-  font-family: 'Montserrat';
-  font-style: italic;
-  padding: 10px;
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 50px;
+  padding: 10px 15px;
   text-align: center;
+`
+
+const SpanTextInfo = styled.span`
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 30px;
+  padding: 10px 20px;
+  text-align: center;
+`
+const SpanTextYes = styled.span`
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 40px;
+  padding: 10px 20px;
+  text-align: center;
+`
+const SpanTextSave = styled.span`
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 70px;
+  padding: 10px 15px;
+  text-align: center;
+  margin-top: 30px;
 `
 
 function Invitacion3() {
@@ -131,7 +168,7 @@ function Invitacion3() {
         showNotice && <ModalComponent setShowNotice={setShowNotice} showNotice={showNotice}/>
       }
       <Image src="../../Logo-lineal_SIN-FONDO_pequeño.png" alt="encabezado1"/>
-      <ImageSave src="../../saveTheDateMontRB.png" alt="encabezado2"/>
+      <SpanTextSave>Save the date</SpanTextSave>
       <div style={{display: 'flex', justifyContent: 'center', width: 'auto', marginBottom: '30px'}}>
         <ReactAudioPlayer 
           ref={audioRef}
@@ -155,10 +192,13 @@ function Invitacion3() {
       </DivDate>
       <ImageBride src="../../../selfieboda.jpg" alt="novios"/>
       <SpanText>
-        ¡Nos casamos!<br></br>Y nada nos haría más ilusión que compartir con vosotros un día inolvidable en el que nos daremos el ¡Sí quiero! Os esperamos el día 12 de Julio de 2025.<br></br>
+        ¡Nos casamos!
+      </SpanText>
+      <SpanTextInfo>
+        Y nada nos haría más ilusión que compartir con vosotros un día inolvidable en el que nos daremos el <br></br><br></br><SpanTextYes>¡Sí quiero!</SpanTextYes><br></br><br></br> Os esperamos el día 12 de Julio de 2025.<br></br>
         La ceremonia tendrá lugar en La Finca El Molino de la Venta, donde lo celebraremos con una gran fiesta.<br></br>
         Rogamos confirmación, ¡un besazo enorme!
-      </SpanText>
+      </SpanTextInfo>
       <Schedule/>
       <Ceremonia/>
       <Formulario/>

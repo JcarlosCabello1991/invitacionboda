@@ -6,8 +6,13 @@ const ImageSchedule = styled.img`
   height: 120px;
 `
 const SpanScheduleNew = styled.span`
-  font-size: 20px;
-  font-family: 'Montserrat';
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  font-size: 40px;
 `
 const ButtonMapa = styled.button`
   margin-top: 30px;
@@ -33,10 +38,11 @@ function Schedule(){
   return(
     <>
     <br></br>
-    <SpanScheduleNew>Transporte</SpanScheduleNew>
+    <SpanScheduleNew>Segobus</SpanScheduleNew>
     <SpanScheduleNew>12:15 desde parking</SpanScheduleNew>
     <SpanScheduleNew>parador de la granja</SpanScheduleNew>
     <ButtonMapa onClick={() => {goToMaps()}}>Ver en mapa</ButtonMapa>
+    <br></br>
     <br></br>
     <SpanScheduleNew>Ceremonia - 13:00</SpanScheduleNew>
     <ImageSchedule src="../../Icono-ceremonia_sin-fondo.png"/>
