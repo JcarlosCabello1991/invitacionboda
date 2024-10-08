@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import CircularProgress from '@mui/material/CircularProgress';
 import Invitacion3 from './Invitacion3/Invitacion3';
+import TextField from '@mui/material/TextField';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -14,7 +15,8 @@ function App() {
     cancionSugerida: '',
     intolerancias: 'No',
     busIda: '',
-    busVuelta: ''
+    busVuelta: '', 
+    mensaje: ''
   });
   const [showDialog, setShowDialog] = useState(false);
   const [charging, setCharging] = useState(false);
@@ -24,6 +26,7 @@ function App() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData((prev) => ({
       ...prev,
       [name]: value,
@@ -43,7 +46,7 @@ function App() {
           },
           body: JSON.stringify(formData)
         })
-        console.log(postUser)
+
         if(postUser.status === 200){
           setFormData({
             invitados: '',
@@ -169,9 +172,22 @@ function App() {
         </select>
       </div>
       <br></br>
+      <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '20px', paddingRight: '20px'}}>
+        <TextField
+          id="outlined-multiline-static"
+          label="Mensaje para los novios"
+          multiline
+          rows={4}
+          name='mensaje'
+          defaultValue={formData.mensaje}
+          onChange={handleChange}
+          style={{backgroundColor: 'white'}}
+        />
+      </div>
+      <br></br>
       {showAdvertise && <div style={{width: '100%',color: 'red', textAlign: 'center', marginBottom: '20px'}}>Debes rellenar todos los campos</div>}
       <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center'}}>
-        <button onClick={handleSubmit} style={{backgroundColor: 'white', border: '0px', borderRadius: '5px', color: 'black', width: '100px'}}>Enviar</button>
+        <button onClick={handleSubmit} style={{backgroundColor: 'white', border: '0px', borderRadius: '5px', color: 'black', width: '100px', height: '30px'}}>Enviar</button>
       </div>      
       <br></br>
     </div>    
