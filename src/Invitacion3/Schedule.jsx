@@ -25,6 +25,14 @@ const ButtonMapa = styled.button`
   background-color: #c4eef1;
   color: #42979d;
 `
+const ImageBride = styled.img`
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+`
 
 function Schedule(){
 
@@ -38,6 +46,7 @@ function Schedule(){
   return(
     <>
     <br></br>
+    <ImageBride src="../../../pedida.jpg" alt="novios"/>
     <SpanScheduleNew>Segobus</SpanScheduleNew>
     <SpanScheduleNew>12:15 desde parking</SpanScheduleNew>
     <SpanScheduleNew>parador de la granja</SpanScheduleNew>

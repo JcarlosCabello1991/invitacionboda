@@ -24,9 +24,14 @@ const style = {
 };
 
 const Paragraph = styled.p`
-  font-size: 32px;
+  font-size: 50px;
   text-align: center;
-  font-family: 'Montserrat';
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 `
 
 const Button = styled.button`
@@ -40,8 +45,16 @@ const Button = styled.button`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px;
-  font-family: 'Montserrat';
+  padding: 10px;
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  };
 `
 
 function ModalComponent(props){

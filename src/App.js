@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import CircularProgress from '@mui/material/CircularProgress';
 import Invitacion3 from './Invitacion3/Invitacion3';
 import TextField from '@mui/material/TextField';
+import Hoteles from './Invitacion3/Hoteles';
 
 function App() {
   const [formData, setFormData] = useState({
@@ -55,7 +56,8 @@ function App() {
             cancionSugerida: '',
             intolerancias: 'No',
             busIda: '',
-            busVuelta: ''
+            busVuelta: '',
+            mensaje: ''
           });
           setCharging(false);
           setTextDialog("Guardado correctamente!")
@@ -196,6 +198,7 @@ function App() {
     <div className="App">
       <Invitacion3/>
       {formulario}
+      <Hoteles/>
     </div>
   );
 }

@@ -24,7 +24,7 @@ function Formulario(){
     <>
       <SpanNombre>
         Vuestra presencia es el mayor regalo y ese día todo corre de nuestra cuenta y nuestro número de cuenta es:<br></br>
-        XXXX-XXXX-XXXX-XXXX<br></br><br></br>
+        <span style={{fontFamily:'sans-serif', fontSize:'20px', fontStyle:'italic'}}>ES20 2100 6326 1302 0013 9503</span><br></br><br></br>
         No olvides rellenar el formulario
       </SpanNombre>
     </>
