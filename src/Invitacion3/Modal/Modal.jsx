@@ -23,40 +23,6 @@ const style = {
   backgroundColor:'#c4eef1',
 };
 
-const Paragraph = styled.p`
-  font-size: 50px;
-  text-align: center;
-  @font-face {
-    font-family: 'Amsterdam';
-    src: url('../fonts/Amsterdam.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-`
-
-const Button = styled.button`
-  background-color: #42979d; 
-  border: 0px; 
-  border-radius: 5px; 
-  color: white; 
-  margin-left:50px; 
-  margin-right: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  font-size: 40px;
-  padding-top: 20px;
-  text-align: center;
-  @font-face {
-    font-family: 'Amsterdam';
-    src: url('../fonts/Amsterdam.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  };
-`
-
 const ButtonRound = styled.button`
   background-color: #42979d; 
   position: absolute;
