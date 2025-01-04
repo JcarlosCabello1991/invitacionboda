@@ -5,6 +5,7 @@ import Ceremonia from "./Ceremonia";
 import Formulario from "./Formulario";
 import ModalComponent from "./Modal/Modal";
 import ReactAudioPlayer from 'react-audio-player';
+import './fontStyleParagraphs.css'
 
 
 const Container = styled.div`
@@ -69,16 +70,13 @@ const SpanText = styled.span`
   font-size: 50px;
   padding: 10px 15px;
   text-align: center;
+  color: #42979d;
 `
 
 const SpanTextInfo = styled.span`
-@font-face {
-    font-family: 'Amsterdam';
-    src: url('../fonts/Amsterdam.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  font-size: 30px;
+  font-family: 'Montserrat';
+  font-style:italic;
+  font-size: 20px;
   padding: 10px 20px;
   text-align: center;
 `
@@ -92,6 +90,7 @@ const SpanTextYes = styled.span`
   font-size: 40px;
   padding: 10px 20px;
   text-align: center;
+  color: #42979d;
 `
 const SpanTextSave = styled.span`
 @font-face {
@@ -195,10 +194,12 @@ function Invitacion3() {
         ¡Nos casamos!
       </SpanText>
       <SpanTextInfo>
-        Y nada nos haría más ilusión que compartir con vosotros un día inolvidable en el que nos daremos el <br></br><br></br><SpanTextYes>¡Sí quiero!</SpanTextYes><br></br><br></br> Os esperamos el día 12 de Julio de 2025.<br></br>
-        La ceremonia tendrá lugar en La Finca El Molino de la Venta, donde lo celebraremos con una gran fiesta.<br></br>
-        Rogamos confirmación, ¡un besazo enorme!
+        Y nada nos haría más ilusión que compartir con vosotros un día inolvidable en el que nos daremos el
       </SpanTextInfo>
+      <SpanTextYes>¡Sí quiero!</SpanTextYes>
+      <SpanTextInfo>Os esperamos el día 12 de julio de 2025.<br></br>
+        La ceremonia tendrá lugar en La Finca El Molino de la Venta, donde lo celebraremos con una gran fiesta.<br></br>
+        Rogamos confirmación, ¡un besazo enorme!</SpanTextInfo>
       <Schedule/>
       <Ceremonia/>
       <Formulario/>

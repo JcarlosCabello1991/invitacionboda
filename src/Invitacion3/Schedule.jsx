@@ -47,9 +47,8 @@ function Schedule(){
     <>
     <br></br>
     <ImageBride src="../../../pedida.jpg" alt="novios"/>
-    <SpanScheduleNew>Segobus</SpanScheduleNew>
-    <SpanScheduleNew>12:15 desde parking</SpanScheduleNew>
-    <SpanScheduleNew>parador de la granja</SpanScheduleNew>
+    <SpanScheduleNew style={{textAlign: 'center', paddingLeft: '10px', paddingRight: '20px', color: "#42979d", fontWeight: 'bold'}}>Acompáñanos en cada paso del día más especial:</SpanScheduleNew><br></br>
+    <SpanScheduleNew style={{textAlign: 'center', paddingLeft: '10px', paddingRight: '20px', fontFamily:'Montserrat', fontSize: '20px', fontStyle: 'italic'}}>Salida a las <strong>12:15</strong> desde el parking del parador de La Granja. Por favor, sed puntuales, os lleva Segobus</SpanScheduleNew>
     <ButtonMapa onClick={() => {goToMaps()}}>Ver en mapa</ButtonMapa>
     <br></br>
     <br></br>
@@ -61,6 +60,8 @@ function Schedule(){
     <ImageSchedule src="../../Icono-banquete_sin-fondo.png"/>
     <SpanScheduleNew>Fiesta - 18:15</SpanScheduleNew>
     <ImageSchedule src="../../Icono-fiesta_sin-fondo.png"/>
+    <SpanScheduleNew style={{textAlign: 'center', paddingLeft: '10px', paddingRight: '10px', fontFamily:'Montserrat', fontSize: '20px', fontStyle: 'italic'}}>Bus de regreso a<br></br> La Granja - 00:10</SpanScheduleNew>
+    <br></br>
     </>
   )
 }

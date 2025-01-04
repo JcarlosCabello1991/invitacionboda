@@ -57,6 +57,31 @@ const Button = styled.button`
   };
 `
 
+const ButtonRound = styled.button`
+  background-color: #42979d; 
+  position: absolute;
+  bottom: 15%; /* Ajusta este valor para mantenerlo fijo respecto al contenedor */
+  left: 50%;
+  transform: translateX(-50%); /* Ajusta para centrar respecto al eje X */
+  border: 0px; 
+  border-radius: 50%; 
+  color: white; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 40px;
+  padding-top: 20px;
+  text-align: center;
+  @font-face {
+    font-family: 'Amsterdam';
+    src: url('../fonts/Amsterdam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  };
+`
+
 function ModalComponent(props){
 
   const {
@@ -82,10 +107,12 @@ function ModalComponent(props){
           charging ? 
           <CircularProgress/> :
           <>
-            <Paragraph>
+            {/* <Paragraph>
               ¡Cris y Juanqui quieren compartir esto contigo!
-            </Paragraph>
-            <Button onClick={() => closeInvitacion()}>Abrir</Button>
+            </Paragraph> */}
+            <img src="../../sobrebg.png" alt="sobre" style={{width:'100%'}}/>
+            <ButtonRound onClick={() => closeInvitacion()}>Abrir</ButtonRound>
+            {/* <Button onClick={() => closeInvitacion()}>Abrir</Button> */}
           </>       
         }
       </Box>

@@ -144,10 +144,11 @@ function App() {
           <option value="Sí">Sí</option>
           <option value="No">No</option>
         </select>
+        <span style={{fontSize: '10px', color: 'grey', fontStyle: 'italic'}}>Horario y lugar por confirmar</span>
       </div>
       <br></br>
       <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '20px', paddingRight: '20px'}}>
-        <label>Sugerencia de Canción:</label>
+        <label>Qué canción tiene que sonar sí o sí:</label>
         <input type="text" name="cancionSugerida" value={formData.cancionSugerida} onChange={handleChange} style={{fontFamily:'sans-serif'}}/>
       </div>
       <br></br>
