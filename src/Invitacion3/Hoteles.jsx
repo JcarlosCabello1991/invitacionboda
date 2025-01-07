@@ -19,6 +19,7 @@ const Span = styled.span`
   font-size: 20px;
   font-style: italic;
   font-family: 'Montserrat';
+  text-align: justify;
 `
 
 const SpanHotel = styled.span`
@@ -45,7 +46,7 @@ function Hoteles(){
         Si lo preferís también podéis alojaros en algún hotel/hostal de La Granja<br></br>
       </Span>
       <p style={{textAlign: 'center', fontSize: '30px', fontWeight: 'bold', color: "#42979d"}}>Sitios de interés, por si el domingo seguís con fuerzas</p>
-      <Span style={{fontSize: '18px'}}>
+      <Span style={{fontSize: '18px', textAlign: 'justify'}}>
         - Real Fábrica de Cristales de La Granja<br></br>
         - Los Jardines del Palacio Real de La Granja de San Ildefonso<br></br>
         - El Palacio Real de La Granja<br></br>
