@@ -60,7 +60,7 @@ function Schedule(){
     <ImageSchedule src="../../Icono-banquete_sin-fondo.png"/>
     <SpanScheduleNew>Fiesta - 18:15</SpanScheduleNew>
     <ImageSchedule src="../../Icono-fiesta_sin-fondo.png"/>
-    <SpanScheduleNew style={{textAlign: 'center', paddingLeft: '10px', paddingRight: '10px', fontFamily:'Montserrat', fontSize: '20px', fontStyle: 'italic'}}>Bus de regreso a<br></br> La Granja - 00:10</SpanScheduleNew>
+    <SpanScheduleNew style={{textAlign: 'center', paddingLeft: '10px', paddingRight: '10px', fontFamily:'Montserrat', fontSize: '20px', fontStyle: 'italic'}}>Bus de regreso a<br></br> La Granja - 01:10</SpanScheduleNew>
     <br></br>
     </>
   )
