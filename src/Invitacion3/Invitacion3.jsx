@@ -198,8 +198,8 @@ function Invitacion3() {
       </SpanTextInfo>
       <SpanTextYes>¡Sí quiero!</SpanTextYes>
       <SpanTextInfo>Os esperamos el día 12 de julio de 2025.<br></br>
-        La ceremonia tendrá lugar en La Finca El Molino de la Venta, donde lo celebraremos con una gran fiesta.<br></br>
-        Rogamos confirmación, ¡un besazo enorme!</SpanTextInfo>
+        La ceremonia tendrá lugar en La Finca El Molino de la Venta, donde lo celebraremos con una gran fiesta.<br></br><br></br>
+        Rogamos confirmación, rellenando el formulario que encontrarás al final de esta invitación, ¡un besazo enorme!</SpanTextInfo>
       <Schedule/>
       <Ceremonia/>
       <Formulario/>
