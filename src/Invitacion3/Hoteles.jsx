@@ -40,8 +40,13 @@ function Hoteles(){
       </SpanHotel>
       <br></br>
       <Span>
-        Este es el hotel propio de la finca donde tendrá lugar nuestro día. Para los que venís de fuera, la finca nos guarda unas habitaciones, por si os queréis quedar allí esos días. El coste es de 68€ la habitación doble
-        con desayuno incluido.<br></br> Para reservar una habitación, solo tendréis que llamar al teléfono <strong>92 143 50 11</strong>, y decirles, que es para la boda de Cris y Juanqui.<br></br><br></br> 
+        Este es el hotel propio de la finca donde tendrá lugar nuestro día. Para los que venís de fuera, la finca nos guarda unas habitaciones, por si os queréis quedar allí esos días.<br></br>
+        Las tarifas son:<br></br><br></br>
+        - Habitación doble: 68€.<br></br>
+        - Habitación doble de uso individual: 53€.<br></br>
+        - Habitación doble con cama supletoria: 83€ (Bajo disponibilidad).<br></br>
+        Estos precios incluyen IVA, además estos precios incluyen desayuno continental como cortesía<br></br>
+        <br></br> Para reservar una habitación, solo tendréis que llamar al teléfono <strong>92 143 50 11</strong>, y decirles, que es para la boda de Cris y Juanqui.<br></br><br></br> 
         El hotel no puede garantizar el check-in antes de las 14:00 horas, por lo que os recomendamos que vengáis a disfrutar de la preboda y os alojéis desde el viernes.<br></br><br></br>
         Si lo preferís también podéis alojaros en algún hotel/hostal de La Granja<br></br>
       </Span>
