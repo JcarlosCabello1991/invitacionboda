@@ -107,7 +107,7 @@ const SpanTextSave = styled.span`
 
 function Invitacion3() {
 
-  const fechaObjetivo = new Date('2025-07-12T13:00:00');
+  const fechaObjetivo = new Date(Date.UTC(2025, 6, 12, 13, 0, 0));
 
   const [date, setDate] = useState({
     dias: "",
@@ -122,7 +122,8 @@ function Invitacion3() {
     const ahora = new Date();
 
     // Calcula la diferencia en milisegundos entre las fechas
-    const diferencia = fechaObjetivo - ahora;
+    const fechaObjetivoLocal = new Date(fechaObjetivo.toLocaleString("en-US", { timeZone: "Europe/Madrid" }));
+    const diferencia = fechaObjetivoLocal.getTime() - ahora.getTime();
 
     if (diferencia <= 0) {
         // Si la fecha objetivo ha pasado, muestra un mensaje o realiza alguna acción
@@ -130,15 +131,16 @@ function Invitacion3() {
         return;
     }
 
-    // Calcula días, horas, minutos y segundos
     let segundosTotales = Math.floor(diferencia / 1000);
     let segundos = segundosTotales % 60;
-    let minutos = Math.floor(segundosTotales / 60);
-    let horas = Math.floor(minutos / 60);
-    let dias = Math.floor(horas / 24);
 
-    horas %= 24;
-    minutos %= 60;
+    let minutosTotales = Math.floor(segundosTotales / 60);
+    let minutos = minutosTotales % 60;
+
+    let horasTotales = Math.floor(minutosTotales / 60);
+    let horas = horasTotales % 24;
+
+    let dias = Math.floor(horasTotales / 24);
     setDate({
       dias: dias.toString(),
       horas: horas.toString(),
